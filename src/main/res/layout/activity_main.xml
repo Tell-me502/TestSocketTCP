@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <EditText
+        android:id="@+id/msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="2"/>
+    <Button
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送信息"
+        app:layout_constraintTop_toBottomOf="@+id/msg"/>
+
+    <TextView
+        android:id="@+id/display_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:textSize="16sp"
+        android:minLines="2"
+        app:layout_constraintTop_toBottomOf="@+id/send" />
+
+</android.support.constraint.ConstraintLayout>
